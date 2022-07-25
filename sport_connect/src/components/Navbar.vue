@@ -1,7 +1,5 @@
 <template>
-        <nav id="navbar">
-            <router-link to="/post" title="Publier un post"><i class="fas fa-pencil-alt"></i></router-link> 
-             <router-link to="/postList" title="Liste des posts"><i class="fas fa-globe"></i></router-link>
+        <nav id="navbar">          
             <router-link to="/profil" title="Votre compte"><i class="far fa-address-card"></i></router-link>            
             <router-link to="/" title="Informations"><i @click="deconnect" class="fas fa-door-open" title="Déconnexion"></i></router-link>
         </nav>
@@ -9,7 +7,7 @@
 
 <script>
 export default {
-    name: "Navbar",
+    name: "NavBar",
     methods: {
         deconnect() {
            sessionStorage.clear();

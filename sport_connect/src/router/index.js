@@ -13,7 +13,7 @@ Vue.use(require('vue-moment'));
 const routes = [  
   {
     path: '/',
-    name: 'Login',
+    name: 'LogIn',
     component: Login,
   },  
     {
@@ -23,7 +23,7 @@ const routes = [
     }, 
     {
       path: '/profil',
-      name: 'Profil',
+      name: 'ProfilUser',
       component: Profil,
     },     
     

@@ -4,18 +4,18 @@
 
             <div class="signupContainer">
                 <h2>Gestion du compte de {{ userProfil.firstName }} {{ userProfil.lastName }}</h2>
-                <p>Vous êtes inscrit depuis le <span>{{ userProfil.createdAt | moment("DD.MM.YY") }}</span>🥰.</p>
+                <!-- <p>Vous êtes inscrit depuis le <span>{{ userProfil.createdAt | moment("DD.MM.YY") }}</span>🥰.</p> -->
                 <button @click="deleteProfil" class="profil_button">Supprimez votre compte 😢</button>  
             </div>  
      </section>
 </template>
 
 <script >
-    import Navbar from '../components/Navbar'
+
 export default {
-    name: 'Profil',
+    name: 'ProfilUser',
     components: {
-        Navbar
+
     },
     data() {
         return {
@@ -32,7 +32,7 @@ export default {
         }
     },
     mounted() {
-        let url = `http://localhost:3000/api/user/profil`;
+        let url = ``;
         let options = {
             method: "GET",
             headers: {
